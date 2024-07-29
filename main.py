@@ -36,9 +36,6 @@ class TypingTestApp:
         new_sentences = random.sample(sentences, 10)
         self.current_sentences.extend(new_sentences)
 
-        # Keep only the last 10 sentences in the display list
-        if len(self.current_sentences) > 10:
-            self.current_sentences = self.current_sentences[-10:]
 
         # Update the display text
         self.original_text = " ".join(self.current_sentences)
